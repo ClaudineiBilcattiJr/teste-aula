@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout - clone
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Testes de Qualidade
         run: echo "Os testes de qualidade sao executados nesta etapa!"
