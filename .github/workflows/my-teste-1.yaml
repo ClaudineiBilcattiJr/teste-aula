@@ -1,0 +1,23 @@
+name: my-teste-1
+on:
+  pull_request:
+    types: [opened,synchronize]
+    branches:
+      - main
+      - master
+run-name: Running CI my teste 🚀🚀🚀
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git checkout - clone
+      - uses: actions/checkout@v3
+
+      - name: Testes de Qualidade
+        run: echo "Os testes de qualidade sao executados nesta etapa!"
+
+      - name: Testes de Seguranca
+        run: echo "Os testes de seguranca sao executados nesta etapa!"
+
+      - name: Testes Unitarios
+        run: echo "Os testes de unitarios sao executados nesta etapa!"   
